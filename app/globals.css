@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+.sOneMain{
+    position: relative;
+    height: 30vh;
+    background-color: aquamarine;
+}
+.sesOneMainH{
+    height: 100vh;
+}
+.imageRight{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+.imageLeft{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+.offcanvas{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    z-index: 100;
+    position: fixed;
+  }
+ .offcanActive{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.8s ease-in-out;
+ }
+ .offcanInactive{
+    opacity: 0;
+    transform: translateX(500px);
+    transition: 0.5s ease;
+ }
